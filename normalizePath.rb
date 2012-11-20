@@ -30,7 +30,7 @@ loop do
     end
   end
   
-  # replace all "./" with empty str
+  # finally replace all "./" with empty str
   normalizedPath = normalizedPath.gsub(%r{([.]{1}\/)|(\/?[.]{1}\/?$)}, '')
   puts "DONE. Your normalized path is: #{normalizedPath}"
   

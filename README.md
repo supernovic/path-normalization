@@ -1,6 +1,9 @@
 path-normalization
 ==================
 
+To run this program, simply open a terminal and type ruby normalizePath.rb. From there, you can feed in paths to standard input
+and the resulting normalized path will be printed to standard output. Press CTRL+C at any time during the program to stop execution.
+
 == BEGIN PROBLEM ==
 
 Please write a method to normalize a string which represents a file path. For the purposes of this question, normalizing means:
