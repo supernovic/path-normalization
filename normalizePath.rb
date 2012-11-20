@@ -5,7 +5,7 @@
 
 loop do
   
-  puts "Enter file path:"
+  puts "Enter file path: Press CTRL+C to stop."
   path = gets.chomp
   
   # check for erroneous paths
@@ -30,6 +30,8 @@ loop do
     end
   end
   
-  # replace "./" with empty str
+  # replace all "./" with empty str
+  normalizedPath = normalizedPath.gsub(%r{([.]{1}\/)|(\/?[.]{1}\/?$)}, '')
+  puts "DONE. Your normalized path is: #{normalizedPath}"
   
 end
